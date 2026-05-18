@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { C, SERIF, WA_URL, EASE } from '../tokens';
+import { C, SERIF, WA_URL } from '../tokens';
 import { Reveal } from '../components/Reveal';
 
 export function FinalCTA() {
