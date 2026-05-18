@@ -161,7 +161,7 @@ const STYLES = `
     display: flex;
     overflow-x: auto;
     gap: 16px;
-    padding: 0 24px 16px;
+    padding: 20px 24px 16px;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     max-width: none;
