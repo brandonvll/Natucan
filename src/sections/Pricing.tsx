@@ -5,12 +5,12 @@ import { Check } from 'lucide-react';
 
 const PLANS = [
   {
-    name: '1 Bolsa',
-    price: '$16.900',
-    desc: 'Para conocer NatuCan',
-    features: ['100g de patas deshidratadas', 'Snack premium para tu perro', 'Entrega en Medellín'],
-    featured: false,
-    cta: 'Pedir 1 Bolsa',
+    name: 'Combo x3',
+    price: '$39.900',
+    desc: 'El más popular 🐾',
+    features: ['3 bolsas × 100g', 'Ahorras $10.800 vs precio individual', '🚚 Envío GRATIS a Medellín'],
+    featured: true,
+    cta: 'Pedir Combo x3',
   },
   {
     name: 'Combo x2',
@@ -21,12 +21,12 @@ const PLANS = [
     cta: 'Pedir Combo x2',
   },
   {
-    name: 'Combo x3',
-    price: '$39.900',
-    desc: 'El más popular 🐾',
-    features: ['3 bolsas × 100g', 'Ahorras $10.800 vs precio individual', '🚚 Envío GRATIS a Medellín'],
-    featured: true,
-    cta: 'Pedir Combo x3',
+    name: '1 Bolsa',
+    price: '$16.900',
+    desc: 'Para conocer NatuCan',
+    features: ['100g de patas deshidratadas', 'Snack premium para tu perro', 'Entrega en Medellín'],
+    featured: false,
+    cta: 'Pedir 1 Bolsa',
   },
 ];
 
