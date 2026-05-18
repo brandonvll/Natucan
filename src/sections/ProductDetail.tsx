@@ -137,7 +137,8 @@ export function ProductDetail() {
                       exit={{ opacity: 0, y: 8, scale: 0.95 }}
                       transition={{ duration: 0.2, ease: EASE }}
                       style={{
-                        position: 'absolute', bottom: 'calc(100% + 12px)', left: 0,
+                        position: 'absolute', bottom: 'calc(100% + 12px)',
+                        left: '50%', marginLeft: -140,
                         background: C.white, borderRadius: 16,
                         border: `1px solid ${C.border}`,
                         boxShadow: '0 12px 40px rgba(28,61,34,0.15)',
