@@ -32,7 +32,7 @@ const STYLES = `
   align-items: stretch;
 }
 .benefits-content {
-  padding: 96px 48px 96px max(24px, calc(50vw - 550px));
+  padding: 96px 48px 96px max(24px, calc(50vw - 680px));
 }
 
 /* Comparison — two columns */

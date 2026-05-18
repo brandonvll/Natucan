@@ -89,7 +89,7 @@ export function Benefits() {
             alt="Perro feliz masticando patas de pollo NatuCan"
             style={{
               position: 'absolute', inset: 0,
-              width: '100%', height: '100%',
+              width: '75%', height: '100%',
               objectFit: 'cover', objectPosition: 'center top',
               display: 'block',
             }}
