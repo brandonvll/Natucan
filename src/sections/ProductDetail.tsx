@@ -6,7 +6,7 @@ import { Reveal } from '../components/Reveal';
 const NUTRITION = [
   { label: 'Proteína', value: '45%', icon: '💪' },
   { label: 'Colágeno', value: 'Alto', icon: '🦴' },
-  { label: 'Calorías', value: '340 kcal', icon: '⚡' },
+  { label: 'Calorías', value: '340', icon: '⚡' },
   { label: 'Aditivos', value: 'Cero', icon: '🚫' },
 ];
 
