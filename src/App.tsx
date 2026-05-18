@@ -123,6 +123,7 @@ const STYLES = `
   }
   .benefits-content { padding: 64px 24px; }
   .benefits-image-col { min-height: 360px; order: -1; }
+  .benefits-dog { width: 100% !important; }
 
   .comparison-grid {
     grid-template-columns: 1fr;

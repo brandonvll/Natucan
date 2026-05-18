@@ -87,6 +87,7 @@ export function Benefits() {
           <img
             src="/perro2.png"
             alt="Perro feliz masticando patas de pollo NatuCan"
+            className="benefits-dog"
             style={{
               position: 'absolute', inset: 0,
               width: '75%', height: '100%',
