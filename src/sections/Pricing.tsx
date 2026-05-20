@@ -10,6 +10,7 @@ const PLANS = [
     desc: 'El más popular 🐾',
     features: ['3 bolsas × 100g', 'Ahorras $10.800 vs precio individual', '🚚 Envío GRATIS a Medellín y área metropolitana'],
     featured: true,
+    badge: '🚚 Envío GRATIS',
     cta: 'Pedir Combo x3',
   },
   {
@@ -18,6 +19,7 @@ const PLANS = [
     desc: 'Ahorra más por bolsa',
     features: ['2 bolsas × 100g', 'Ahorras $3.900 vs precio individual', '🚚 Domicilio $6.000 a Medellín y área metropolitana'],
     featured: false,
+    badge: '🚚 Domicilio $6.000',
     cta: 'Pedir Combo x2',
   },
   {
@@ -26,6 +28,7 @@ const PLANS = [
     desc: 'Para conocer NatuCan',
     features: ['100g de patas deshidratadas', 'Snack premium para tu perro', '🚚 Domicilio $12.000 a Medellín y área metropolitana'],
     featured: false,
+    badge: '🚚 Domicilio $12.000',
     cta: 'Pedir 1 Bolsa',
   },
 ];
@@ -76,6 +79,16 @@ export function Pricing() {
                     fontSize: 12, fontWeight: 700, whiteSpace: 'nowrap',
                   }}>
                     ⭐ Más popular
+                  </div>
+                )}
+                {!plan.featured && (
+                  <div style={{
+                    position: 'absolute', top: -14, left: '50%', transform: 'translateX(-50%)',
+                    background: C.green, color: C.white,
+                    padding: '4px 18px', borderRadius: 100,
+                    fontSize: 12, fontWeight: 700, whiteSpace: 'nowrap',
+                  }}>
+                    {plan.badge}
                   </div>
                 )}
 
