@@ -28,8 +28,19 @@ export function Footer() {
           ))}
         </div>
 
-        <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.25)' }}>
-          © {new Date().getFullYear()} NatuCan · Hecho con 🐾
+        <div style={{ textAlign: 'right' }}>
+          <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.25)', marginBottom: 4 }}>
+            © {new Date().getFullYear()} NatuCan · Hecho con 🐾
+          </div>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden>
+              <path d="M12 2L3 6.5V12c0 5 3.8 9.7 9 11 5.2-1.3 9-6 9-11V6.5L12 2z" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.35)" strokeWidth="1.5" strokeLinejoin="round"/>
+              <path d="M8 12l2.5 2.5L16 9" stroke="rgba(255,255,255,0.5)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.28)', fontWeight: 500 }}>
+              Producto avalado por ICA · Reg. N° 0130002024
+            </span>
+          </div>
         </div>
       </div>
     </footer>

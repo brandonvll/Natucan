@@ -108,7 +108,7 @@ export function Hero() {
             </motion.a>
           </motion.div>
 
-          {/* Trust line */}
+          {/* ICA badge */}
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
@@ -116,14 +116,21 @@ export function Hero() {
             style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 28 }}
             className="hero-trust"
           >
-            <div style={{ display: 'flex' }}>
-              {['⭐', '⭐', '⭐', '⭐', '⭐'].map((s, i) => (
-                <span key={i} style={{ fontSize: 15 }}>{s}</span>
-              ))}
+            <div style={{
+              display: 'inline-flex', alignItems: 'center', gap: 9,
+              padding: '8px 16px', borderRadius: 100,
+              background: 'rgba(255,255,255,0.10)',
+              border: '1px solid rgba(255,255,255,0.22)',
+              backdropFilter: 'blur(8px)', WebkitBackdropFilter: 'blur(8px)',
+            }}>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden style={{ flexShrink: 0 }}>
+                <path d="M12 2L3 6.5V12c0 5 3.8 9.7 9 11 5.2-1.3 9-6 9-11V6.5L12 2z" fill="rgba(255,255,255,0.25)" stroke="rgba(255,255,255,0.7)" strokeWidth="1.5" strokeLinejoin="round"/>
+                <path d="M8 12l2.5 2.5L16 9" stroke="rgba(255,255,255,0.9)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              <span style={{ color: 'rgba(255,255,255,0.90)', fontSize: 13, fontWeight: 600, letterSpacing: 0.2 }}>
+                Avalado por ICA · Reg. N° 0130002024
+              </span>
             </div>
-            <span style={{ color: 'rgba(255,255,255,0.75)', fontSize: 14, fontWeight: 500 }}>
-              +500 peludos felices en Medellín
-            </span>
           </motion.div>
         </div>
       </div>
