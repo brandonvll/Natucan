@@ -82,16 +82,13 @@ export function ProductDetail() {
           {/* ICA certification badge */}
           <Reveal delay={0.20}>
             <div style={{
-              display: 'inline-flex', alignItems: 'center', gap: 10,
-              padding: '10px 18px', borderRadius: 12, marginBottom: 28,
+              display: 'inline-flex', alignItems: 'center', gap: 12,
+              padding: '10px 18px 10px 14px', borderRadius: 12, marginBottom: 28,
               background: C.greenLight, border: `1.5px solid ${C.border}`,
             }}>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden style={{ flexShrink: 0 }}>
-                <path d="M12 2L3 6.5V12c0 5 3.8 9.7 9 11 5.2-1.3 9-6 9-11V6.5L12 2z" fill={C.greenLight} stroke={C.green} strokeWidth="1.5" strokeLinejoin="round"/>
-                <path d="M8 12l2.5 2.5L16 9" stroke={C.green} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
+              <img src="/ica-logo.png" alt="ICA - Instituto Colombiano Agropecuario" style={{ height: 32, objectFit: 'contain' }} />
               <div>
-                <div style={{ fontSize: 12, fontWeight: 700, color: C.green, letterSpacing: 0.5, textTransform: 'uppercase', lineHeight: 1 }}>
+                <div style={{ fontSize: 12, fontWeight: 700, color: C.green, letterSpacing: 0.5, textTransform: 'uppercase' as const, lineHeight: 1 }}>
                   Avalado por ICA
                 </div>
                 <div style={{ fontSize: 11, color: C.darkMuted, fontWeight: 500, marginTop: 2 }}>

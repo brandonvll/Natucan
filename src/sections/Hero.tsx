@@ -117,16 +117,13 @@ export function Hero() {
             className="hero-trust"
           >
             <div style={{
-              display: 'inline-flex', alignItems: 'center', gap: 9,
-              padding: '8px 16px', borderRadius: 100,
+              display: 'inline-flex', alignItems: 'center', gap: 10,
+              padding: '7px 16px 7px 10px', borderRadius: 100,
               background: 'rgba(255,255,255,0.10)',
               border: '1px solid rgba(255,255,255,0.22)',
               backdropFilter: 'blur(8px)', WebkitBackdropFilter: 'blur(8px)',
             }}>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden style={{ flexShrink: 0 }}>
-                <path d="M12 2L3 6.5V12c0 5 3.8 9.7 9 11 5.2-1.3 9-6 9-11V6.5L12 2z" fill="rgba(255,255,255,0.25)" stroke="rgba(255,255,255,0.7)" strokeWidth="1.5" strokeLinejoin="round"/>
-                <path d="M8 12l2.5 2.5L16 9" stroke="rgba(255,255,255,0.9)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
+              <img src="/ica-logo-white.png" alt="ICA" style={{ height: 22, objectFit: 'contain', opacity: 0.9 }} />
               <span style={{ color: 'rgba(255,255,255,0.90)', fontSize: 13, fontWeight: 600, letterSpacing: 0.2 }}>
                 Avalado por ICA · Reg. N° 0130002024
               </span>
