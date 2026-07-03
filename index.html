@@ -5,6 +5,8 @@
     <link rel="icon" href="/ico.png.png" type="image/png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#1C3D22" />
+    <!-- Verificación de dominio Meta: pega aquí el código de Meta Business → Configuración del negocio → Dominios. Descomenta y reemplaza el content: -->
+    <!-- <meta name="facebook-domain-verification" content="TU_CODIGO_AQUI" /> -->
     <title>NatuCan — Patas de Pollo Deshidratadas 100% Naturales</title>
     <meta name="description" content="Snacks naturales para perros. Patas de pollo deshidratadas 100% naturales, sin aditivos ni conservantes. Entrega en Medellín." />
     <meta property="og:title" content="NatuCan — El snack que tu peludo va a amar" />
@@ -21,7 +23,8 @@
       s.parentNode.insertBefore(t,s)}(window, document,'script',
       'https://connect.facebook.net/en_US/fbevents.js');
       fbq('init', '906241385756516');
-      fbq('track', 'PageView');
+      window._pvEid = 'pv_' + Date.now();
+      fbq('track', 'PageView', {}, { eventID: window._pvEid });
     </script>
     <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=906241385756516&ev=PageView&noscript=1"

@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { C, SERIF, WA_URL, EASE } from '../tokens';
 import { Reveal } from '../components/Reveal';
+import { trackContact, trackViewContent } from '../lib/pixel';
 
 const NUTRITION = [
   { label: 'Proteína', value: '45%', icon: '💪' },
@@ -121,6 +122,7 @@ export function ProductDetail() {
                 href={WA_URL}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackContact('producto')}
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 style={{
@@ -134,7 +136,7 @@ export function ProductDetail() {
               </motion.a>
               <div ref={tooltipRef} style={{ position: 'relative' }}>
                 <motion.button
-                  onClick={() => setShowNutrition(v => !v)}
+                  onClick={() => { if (!showNutrition) trackViewContent('tabla_nutricional'); setShowNutrition(v => !v); }}
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                   style={{

@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { C, SERIF, WA_URL } from '../tokens';
 import { Reveal } from '../components/Reveal';
+import { trackContact } from '../lib/pixel';
 
 export function FinalCTA() {
   return (
@@ -38,6 +39,7 @@ export function FinalCTA() {
             href={WA_URL}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackContact('final_cta')}
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
             animate={{

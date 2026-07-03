@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { C, SERIF, WA_URL, EASE } from '../tokens';
+import { trackContact, trackViewContent } from '../lib/pixel';
 
 export function Hero() {
   return (
@@ -66,6 +67,7 @@ export function Hero() {
               href={WA_URL}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackContact('hero')}
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               animate={{
@@ -92,7 +94,7 @@ export function Hero() {
 
             <motion.a
               href="#precios"
-              onClick={e => { e.preventDefault(); document.getElementById('precios')?.scrollIntoView({ behavior: 'smooth' }); }}
+              onClick={e => { e.preventDefault(); trackViewContent('hero_ver_precios'); document.getElementById('precios')?.scrollIntoView({ behavior: 'smooth' }); }}
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               style={{

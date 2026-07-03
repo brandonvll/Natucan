@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { C, SERIF, WA_URL, EASE } from '../tokens';
 import { Reveal } from '../components/Reveal';
 import { Check } from 'lucide-react';
+import { trackInitiateCheckout } from '../lib/pixel';
 
 const PLANS = [
   {
@@ -117,6 +118,7 @@ export function Pricing() {
                   href={`${WA_URL}%20-%20${encodeURIComponent(plan.name)}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackInitiateCheckout(plan.name, plan.price)}
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                   style={{

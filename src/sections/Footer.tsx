@@ -1,4 +1,5 @@
 import { C, WA_URL } from '../tokens';
+import { trackContact } from '../lib/pixel';
 
 export function Footer() {
   return (
@@ -18,7 +19,9 @@ export function Footer() {
               href={link.href}
               target={link.external ? '_blank' : undefined}
               rel={link.external ? 'noopener noreferrer' : undefined}
-              onClick={!link.external ? e => { e.preventDefault(); document.querySelector(link.href)?.scrollIntoView({ behavior: 'smooth' }); } : undefined}
+              onClick={link.external
+                ? () => trackContact('footer')
+                : e => { e.preventDefault(); document.querySelector(link.href)?.scrollIntoView({ behavior: 'smooth' }); }}
               style={{ fontSize: 13, color: 'rgba(255,255,255,0.45)', fontWeight: 500, transition: 'color 0.2s' }}
               onMouseEnter={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.8)')}
               onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.45)')}
