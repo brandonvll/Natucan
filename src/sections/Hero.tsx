@@ -127,7 +127,7 @@ export function Hero() {
             }}>
               <img src="/ica-logo-white.png" alt="ICA" style={{ height: 22, objectFit: 'contain', opacity: 0.9 }} />
               <span style={{ color: 'rgba(255,255,255,0.90)', fontSize: 13, fontWeight: 600, letterSpacing: 0.2 }}>
-                Avalado por ICA · Reg. N° 0130002024
+                Avalado por ICA · Reg. N° 01320002024
               </span>
             </div>
           </motion.div>

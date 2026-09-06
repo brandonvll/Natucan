@@ -93,7 +93,7 @@ export function ProductDetail() {
                   Avalado por ICA
                 </div>
                 <div style={{ fontSize: 11, color: C.darkMuted, fontWeight: 500, marginTop: 2 }}>
-                  Registro N° 0130002024 · Comercialización autorizada
+                  Registro N° 01320002024 · Comercialización autorizada
                 </div>
               </div>
             </div>

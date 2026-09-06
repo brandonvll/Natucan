@@ -38,7 +38,7 @@ export function Footer() {
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 7 }}>
             <img src="/ica-logo-white.png" alt="ICA" style={{ height: 16, objectFit: 'contain', opacity: 0.4 }} />
             <span style={{ fontSize: 11, color: 'rgba(255,255,255,0.28)', fontWeight: 500 }}>
-              Producto avalado por ICA · Reg. N° 0130002024
+              Producto avalado por ICA · Reg. N° 01320002024
             </span>
           </div>
         </div>
